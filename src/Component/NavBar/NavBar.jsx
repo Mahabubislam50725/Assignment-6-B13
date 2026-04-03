@@ -11,11 +11,11 @@ const NavBar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a> </li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 5</a></li>
-                        <li><a>Item 6</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>Features</a> </li>
+                        <li><a>Pricing</a></li>
+                        <li><a>Testimonials</a></li>
+                        <li><a>FAQ</a></li>
                     </ul>
                 </div>
                 <a className="text-5xl font-bold text-[#4F39F6]">DigiTools</a>

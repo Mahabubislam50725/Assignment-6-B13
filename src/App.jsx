@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner1 from './Component/Banner/Banner1';
 import NavBar from './Component/NavBar/NavBar';
 
 const fatchData = async () => {
@@ -13,6 +14,7 @@ function App() {
   return (
     <> 
          <NavBar></NavBar>
+         <Banner1></Banner1>
         {/* <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
          
         </Suspense> */}
