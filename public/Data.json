@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Basic resume builder with essential templates for beginners.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Download as PDF"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS optimization and premium designs.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Custom fonts"
+    ],
+    "icon": "Award"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Pack",
+    "description": "Complete package including resume, cover letter, and portfolio builder.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Resume builder",
+      "Cover letter templates",
+      "Portfolio website",
+      "Priority support"
+    ],
+    "icon": "Rocket"
+  },
+  {
+    "id": 4,
+    "name": "Student Plan",
+    "description": "Affordable resume tools for students and fresh graduates.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "20+ templates",
+      "Easy editing",
+      "Export to PDF",
+      "Internship-focused designs"
+    ],
+    "icon": "BookOpen"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Builder",
+    "description": "Create stunning online portfolios easily.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Custom domains",
+      "Drag-and-drop editor",
+      "SEO optimization"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 6,
+    "name": "Job Hunter Pack",
+    "description": "All-in-one toolkit for job seekers to stand out.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Resume + cover letter",
+      "Interview tips",
+      "Job tracking dashboard",
+      "Email templates"
+    ],
+    "icon": "Target"
+  }
+]
