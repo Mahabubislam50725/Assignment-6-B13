@@ -5,14 +5,16 @@ const Card = ({ cardItems }) => {
     console.log(cardItems);
     return (
         <div className='w-full'>
-            <div className="card w-full bg-base-100 shadow-sm h-full p-4 rounded-xl">
+            <div className="card w-full bg-base-100  h-full p-4 rounded-xl shadow-xl">
                 <div className="card-body">
-                    <span className={`badge badge-xs  ml-70 font-semibold text-[16px] p-3 
-                    ${cardItems.tag === 'popular'
-                        ? 'bg-purple-500 text-white'
-                        : cardItems.tag === 'new'
-                            ? 'bg-green-500 text-white'
-                            : 'bg-blue-500 text-white'}`}>{cardItems.tag}</span>
+                    <div className='text-right'>
+                        <span className={`badge badge-xs font-semibold text-[16px] p-3 
+                                ${cardItems.tag === 'popular'
+                                ? 'bg-purple-500 text-white'
+                                : cardItems.tag === 'new'
+                                    ? 'bg-green-500 text-white'
+                                    : 'bg-blue-500 text-white'}`}>{cardItems.tag}</span>
+                    </div>
                     <img className='w-10 rounded-full' src={cardItems.image} alt={cardItems.name} />
                     <div className="flex justify-between">
                         <h2 className="text-2xl font-bold">{cardItems.name}</h2>
@@ -32,7 +34,7 @@ const Card = ({ cardItems }) => {
                         }
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block">Buy Now</button>
+                        <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
                     </div>
                 </div>
             </div>

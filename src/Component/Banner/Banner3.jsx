@@ -1,10 +1,11 @@
-import React, { use } from 'react';
+
 import Card from '../Card/Card';
+import AvailableCard from '../AvailableCard/AvailableCard';
 
 const Banner3 = ({
     DataPromise
 }) => {
-       const Data = use(DataPromise);
+       
         // console.log(Data.name);
     return (
         <div>
@@ -16,14 +17,11 @@ const Banner3 = ({
                     <button className="btn btn-outline btn-primary rounded-full text-[14px] sm:text-[16px] font-bold">Cart (2)</button>
                 </div>
             </div>
+         
+            <AvailableCard DataPromise={DataPromise}></AvailableCard>
 
-          <div className='grid grid-cols-3 container mx-auto mt-8 gap-6'>
-               {
-                Data.map(cardItems => (
-               <Card key={cardItems.id}  cardItems={cardItems}></Card>
-           ))
-       }
-          </div>
+         
+
         </div>
       
 
