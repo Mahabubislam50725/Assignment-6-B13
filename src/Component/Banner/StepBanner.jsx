@@ -1,4 +1,7 @@
 import React from 'react';
+import userImg from '../../assets/user.png';
+import packageImg from '../../assets/package.png';
+import rocketImg from '../../assets/rocket.png';
 
 const StepBanner = () => {
     return (
@@ -15,10 +18,7 @@ const StepBanner = () => {
                             <button className="btn btn-primary rounded-full">1</button>
                         </div>
                         <figure className="px-10 p-5">
-                            <img 
-                                src="/src/assets/user.png"
-                                alt="Shoes"
-                                className="rounded-full p-5 bg-purple-300" />
+                            <img src={userImg} alt="user" className="rounded-full p-5 bg-purple-300" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-4xl">Create Account</h2>
@@ -35,10 +35,7 @@ const StepBanner = () => {
                             <button className="btn btn-primary rounded-full p-4">2</button>
                         </div>
                         <figure className="px-10 p-5">
-                            <img 
-                                src="/src/assets/package.png"
-                                alt="Shoes"
-                                className="rounded-full p-5 bg-purple-300" />
+                            <img src={packageImg} alt="package" className="rounded-full p-5 bg-purple-300" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-4xl">Choose Products</h2>
@@ -56,10 +53,7 @@ const StepBanner = () => {
                             <button className="btn btn-primary rounded-full p-4">3</button>
                         </div>
                         <figure className="px-10 p-4 w-full">
-                            <img 
-                                src="/src/assets/rocket.png"
-                                alt="Shoes"
-                                className="rounded-full p-5 bg-purple-300" />
+                            <img src={rocketImg} alt="rocket" className="rounded-full p-5 bg-purple-300" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-4xl">Start Creating</h2>

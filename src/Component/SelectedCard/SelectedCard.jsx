@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import cartImg from '../../assets/products/shopping-cart.png';
 
 const SelectedCard = ({ selectedCard, setSelectedCard }) => {
 
@@ -19,6 +20,7 @@ const SelectedCard = ({ selectedCard, setSelectedCard }) => {
             <h1 className='font-bold text-6xl'>Your Cart</h1>
             {selectedCard.length === 0 ? 
              <div className='space-y-4 p-6 shadow-lg rounded-4xl'>
+                <img className='mx-auto w-20' src={cartImg} alt="" />
                 <h1 className='font-bold text-6xl text-center  text-gray-400'>Cart is Empty</h1>
                 <p className='font-bold text-3xl text-center text-gray-400' >select a product</p>
              </div>

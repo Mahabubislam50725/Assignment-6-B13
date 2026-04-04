@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosRadioButtonOn } from 'react-icons/io';
+import bannerImg from '../../assets/banner.png';
 
 
 const Banner1 = () => {
@@ -21,7 +22,7 @@ const Banner1 = () => {
 
             </div>
             <div className='Image w-full lg:w-1/2'>
-                <img className='w-full h-full object-cover shadow-2xl' src="/src/assets/banner.png" alt="" />
+                <img className='w-full h-full object-cover shadow-2xl' src={bannerImg} alt="" />
             </div> 
         </div>
     );

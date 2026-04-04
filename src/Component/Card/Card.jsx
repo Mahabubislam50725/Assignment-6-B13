@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Card = ({ cardItems ,selectedCard,setSelectedCard }) => {
     

@@ -1,6 +1,8 @@
 
 import { Suspense, useState } from 'react'
 import './App.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Banner1 from './Component/Banner/Banner1';
 import Banner2 from './Component/Banner/Banner2';
 import Card from './Component/Card/Card';
@@ -34,6 +36,7 @@ const [selectedCard, setSelectedCard] = useState([]);
          <StepBanner></StepBanner>
          <SimpleBanner></SimpleBanner>
          <Footer></Footer>
+         <ToastContainer></ToastContainer>
         
          
         </Suspense>
