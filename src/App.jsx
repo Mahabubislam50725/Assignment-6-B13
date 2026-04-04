@@ -8,6 +8,7 @@ import NavBar from './Component/NavBar/NavBar';
 import Banner3 from './Component/Banner/Banner3';
 import AvailableCard from './Component/AvailableCard/AvailableCard';
 import StepBanner from './Component/Banner/StepBanner';
+import SimpleBanner from './Component/Banner/SimpleBanner';
 
 const fatchData = async () => {
   const res = await fetch("/Data.json");
@@ -30,6 +31,7 @@ function App() {
          <Banner2></Banner2>
          <Banner3 DataPromise={DataPromise}></Banner3>
          <StepBanner></StepBanner>
+         <SimpleBanner></SimpleBanner>
         
          
         </Suspense>
