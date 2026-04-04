@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
 
-const Card = ({ cardItems }) => {
-    console.log(cardItems);
+const Card = ({ cardItems ,selectedCard,setSelectedCard }) => {
+    
+    const [isBuying, setIsBuying] = useState(false);
+
+    const handleBuyNow = () => {
+        
+        toast.success(`You have selected ${cardItems.name} for purchase!`);
+        setIsBuying(true);
+        setSelectedCard([...selectedCard, cardItems]);
+        console.log(selectedCard);
+
+    }
     return (
         <div className='w-full'>
             <div className="card w-full bg-base-100  h-full p-4 rounded-xl shadow-xl">
@@ -34,11 +45,13 @@ const Card = ({ cardItems }) => {
                         }
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
+                        <button onClick={handleBuyNow} disabled={isBuying} className={`btn btn-primary btn-block rounded-full ${isBuying ? 'bg-green-500' : 'bg-blue-500'}`}>{isBuying ? "Add to Cart" : "Buy Now"}</button>
+                        
                     </div>
                 </div>
             </div>
         </div>
+        
     );
 };
 
